@@ -1,0 +1,96 @@
+*{
+    margin: 0;padding: 0;
+}
+body{
+    background-color: rgba(30,30,30,0.6);
+    overflow: hidden;
+}
+#campo{
+    position: absolute;
+    height: 80%;
+    width: 90%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #000;
+    overflow: hidden;
+}
+#obj{
+    position: absolute;
+    width: 0;height: 0;
+    border: 20px solid transparent;
+    border-left: 20px solid rgb(173, 139, 24);
+    border-top: 20px solid rgb(173,139,24);
+    left: 50%;
+    bottom: 10%;
+    transform: rotate(45deg);
+}
+.proj{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #f00;
+}
+.clIni{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: aquamarine;
+}
+p{
+    color: #fff;
+}
+#mostrador{
+    position: relative;
+    width: 150px;
+    height: 60px;
+    left: 5px;top: 5px; 
+}
+#barra{
+    width: 150px;
+    height: 20px;
+    border: 3px solid green;
+    box-sizing: border-box;
+    background-color: rgb(40,40,40);
+}
+#life{
+    width: 144px;
+    height: 13px;
+    background-image: linear-gradient(to right,rgb(64, 255, 47),rgb(32, 192, 17));
+    transition: width 500ms ease-out;
+}
+#telaOver{
+    font-size: 50px;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+#res{
+    width: 40px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    border:2px solid gray;
+    border-radius: 7px;
+    background-color: white;
+    color: black;
+}
+#mostrador_rec{
+    margin-top: 5px;
+    position: absolute;
+    width: 130px;
+    height: 100px;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+#rec{
+    width: 50px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.445);
+    color: white;
+    text-align: center;
+}
