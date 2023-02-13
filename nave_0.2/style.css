@@ -1,0 +1,106 @@
+*{
+    margin: 0;padding: 0;
+}
+body{
+    background-color: rgb(30,30,30);
+    overflow: hidden;
+}
+#campo{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    max-width: 700px;min-width: 650px;
+    max-height: 700px;max-height: 650px;
+    background-image: linear-gradient(to bottom, #000,rgb(70,70,70));
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+#nave{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-image: url(nave_jog.gif);
+    bottom: 20px;
+    left: 49%;
+}
+.tiro{
+    position: absolute;
+    width: 7px;
+    height: 10px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: red;
+    box-shadow: 0px 4px 6px rgba(253, 59, 0, 0.829);
+}
+.bomba{
+    position: absolute;
+    width: 24px;
+    height: 40px;
+    background-image: url(bomba.gif);
+}
+.explosaoAr{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+}
+.explosaoChao{
+    position: absolute;
+    width: 55px;
+    height: 57px;
+}
+#res{
+    width: 40px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    border:2px solid gray;
+    border-radius: 7px;
+    background-color: white;
+    color: black;
+}
+#mostrador_rec{
+    margin-top: 5px;
+    position: absolute;
+    width: 130px;
+    height: 100px;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+#rec{
+    width: 50px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.445);
+    color: white;
+    text-align: center;
+}
+p{
+    color: #fff;
+}
+#mostrador{
+    position: relative;
+    width: 150px;
+    height: 60px;
+    left: 5px;top: 5px; 
+}
+#barra{
+    width: 150px;
+    height: 20px;
+    border: 3px solid green;
+    box-sizing: border-box;
+    background-color: rgb(40,40,40);
+}
+#life{
+    width: 144px;
+    height: 13px;
+    background-image: linear-gradient(to right,rgb(64, 255, 47),        rgb(32, 192, 17));
+    transition: width 500ms ease-out;
+}
+#telaOver{
+    font-size: 50px;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
