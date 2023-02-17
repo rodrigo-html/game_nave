@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="campo">
+        <div id="mostrador" class="most">
+            <p>Life:</p>
+            <div id="barra">
+                <div id="life"></div>
+            </div>
+            <p>Pontos:</p>
+            <input type="text" name="res" id="res" maxlength="3" disabled>
+        </div>
+        <div id="mostrador_rec" class="most">
+            <p>Recorde:</p>
+            <div id="rec"></div>
+            <div id="recordista"></div>
+        </div>
+        <div id="menu">
+            <form action="#">
+                <fieldset>
+                    <legend>Menu</legend>
+                    <div class="boxLabel">
+                        <label for="nome">Nome</label><br>
+                        <input type="text" name="nome" id="nome" required maxlength="15">
+                    </div>
+                    <div class="boxlabel" id="difBox">
+                        <label for="dificudade">Dificudade</label><br>
+                        <select name="dif" id="dif">
+                            <option value="selecione" disabled selected>selecione</option>
+                            <option value="facil" id="facil">facil</option>
+                            <option value="normal" id="normal">normal</option>
+                            <option value="dificil" id="dificil">dificil</option>
+                        </select>
+                    </div>
+                    <input type="submit" value="ok" id="ok">
+                </fieldset>
+            </form>
+        </div>
+        <div id="nave"></div>
+        <input type="button" value="restart" id="restart">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
